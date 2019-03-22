@@ -19,8 +19,9 @@
 //  You should have received a copy of the GNU Lesser General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#pragma warning disable CS0649
 
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace ReachBeyond.EventObjects {
@@ -28,8 +29,8 @@ namespace ReachBeyond.EventObjects {
 	[System.Serializable]
 	public class EventObjectInvoker {
 
-		[SerializeField] EventObject  gameEvent;
-		[SerializeField] UnityEvent unityEvent;
+		[SerializeField] private EventObject gameEvent;
+		[SerializeField] private UnityEvent unityEvent;
 
 		/// <summary>
 		/// Invoke the event. Same as Raise().
