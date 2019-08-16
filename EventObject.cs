@@ -25,7 +25,7 @@ using UnityEngine;
 
 namespace ReachBeyond.EventObjects {
 
-	[CreateAssetMenu(menuName = "EventObject", order = -20100)]
+	[CreateAssetMenu(menuName = "ReachBeyond/EventObject")]
 	public class EventObject : ScriptableObject {
 
 		//private List<EventObjectListener> listeners = new List<EventObjectListener>();
